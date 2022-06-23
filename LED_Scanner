@@ -1,0 +1,300 @@
+const int row_one = 13;
+const int row_two = 12;
+const int row_three = 11;
+const int row_four = 10;
+const int row_five = 9;
+
+const int column_one = 5;
+const int column_two = 7;
+const int column_three = 6;
+
+float combined_speed = 2;
+
+
+
+int a_image[5][3] = {
+  {1, 1, 1},
+  {1, 0, 1},
+  {1, 1, 1},
+  {1, 0, 1},
+  {1, 0, 1}
+};
+int b_image[5][3] = {
+  {1, 0, 0},
+  {1, 0, 0},
+  {1, 1, 1},
+  {1, 0, 1},
+  {1, 1, 1}
+};
+int c_image[5][3] = {
+  {1, 1, 1},
+  {1, 0, 0},
+  {1, 0, 0},
+  {1, 0, 0},
+  {1, 1, 1}
+};
+int d_image[5][3] = {
+  {1, 1, 0},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 1, 0}
+};
+int e_image[5][3] = {
+  {1, 1, 1},
+  {1, 0, 0},
+  {1, 1, 1},
+  {1, 0, 0},
+  {1, 1, 1}
+};
+int f_image[5][3] = {
+  {1, 1, 1},
+  {1, 0, 0},
+  {1, 1, 1},
+  {1, 0, 0},
+  {1, 0, 0}
+};
+int g_image[5][3] = {
+  {1, 1, 0},
+  {1, 1, 1},
+  {0, 0, 1},
+  {1, 0, 1},
+  {1, 1, 1}
+};
+int h_image[5][3] = {
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 1, 1},
+  {1, 0, 1},
+  {1, 0, 1}
+};
+int i_image[5][3] = {
+  {1, 1, 1},
+  {0, 1, 0},
+  {0, 1, 0},
+  {0, 1, 0},
+  {1, 1, 1}
+};
+int j_image[5][3] = {
+  {0, 1, 1},
+  {0, 0, 1},
+  {0, 0, 1},
+  {1, 0, 1},
+  {1, 1, 1}
+};
+int k_image[5][3] = {
+  {1, 0, 1},
+  {1, 1, 0},
+  {1, 0, 0},
+  {1, 1, 0},
+  {1, 0, 1}
+};
+int l_image[5][3] = {
+  {1, 0, 0},
+  {1, 0, 0},
+  {1, 0, 0},
+  {1, 0, 0},
+  {1, 1, 1}
+};
+int m_image[5][3] = {
+  {1, 0, 1},
+  {1, 1, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 0, 1}
+};
+int n_image[5][3] = {
+  {0, 0, 0},
+  {1, 1, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 0, 1}
+};
+int o_image[5][3] = {
+  {1, 1, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 1, 1}
+};
+int p_image[5][3] = {
+  {1, 1, 1},
+  {1, 0, 1},
+  {1, 1, 1},
+  {1, 0, 0},
+  {1, 0, 0}
+};
+int q_image[5][3] = {
+  {1, 1, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 1, 1},
+  {0, 0, 1}
+};
+int r_image[5][3] = {
+  {1, 1, 1},
+  {1, 0, 1},
+  {1, 1, 0},
+  {1, 0, 1},
+  {1, 0, 1}
+};
+int s_image[5][3] = {
+  {1, 1, 1},
+  {1, 0, 0},
+  {1, 1, 1},
+  {0, 0, 1},
+  {1, 1, 1}
+};
+int t_image[5][3] = {
+  {1, 1, 1},
+  {0, 1, 0},
+  {0, 1, 0},
+  {0, 1, 0},
+  {0, 1, 0}
+};
+int u_image[5][3] = {
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 1, 1}
+};
+int v_image[5][3] = {
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {0, 1, 0}
+};
+int w_image[5][3] = {
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 0, 1},
+  {1, 1, 1},
+  {1, 0, 1}
+};
+int x_image[5][3] = {
+  {1, 0, 1},
+  {1, 0, 1},
+  {0, 1, 0},
+  {1, 0, 1},
+  {1, 0, 1}
+};
+int y_image[5][3] = {
+  {1, 0, 1},
+  {1, 0, 1},
+  {0, 1, 0},
+  {0, 1, 0},
+  {0, 1, 0}
+};
+int z_image[5][3] = {
+  {1, 1, 1},
+  {0, 0, 1},
+  {0, 1, 0},
+  {1, 0, 0},
+  {1, 1, 1}
+};
+
+
+
+void display_character(int character_list[5][3], float duration) {
+  float counter = 0;
+  float counter_max = 50 * duration;
+
+  while(counter <= counter_max) {
+    //scanning each row
+    for(int count = 0; count <= 4; count++){
+      delay(4);
+      switch (count) { 
+        case 4:      
+          digitalWrite(row_five, HIGH);
+          digitalWrite(row_four, LOW);
+          break;
+        case 0: 
+          digitalWrite(row_one, HIGH);
+          digitalWrite(row_five, LOW);
+          break;
+        case 1:
+          digitalWrite(row_two, HIGH);
+          digitalWrite(row_one, LOW);
+          break;
+        case 2:
+          digitalWrite(row_three, HIGH);
+          digitalWrite(row_two, LOW);
+          break;
+        case 3:
+          digitalWrite(row_four, HIGH);
+          digitalWrite(row_three, LOW);
+          break;
+      }
+
+      //scanning each column
+      for(int countC = 0; countC <= 2; countC++) {
+        if (countC == 0) {
+          if (character_list[count][countC] != 0) {
+            digitalWrite(column_one, HIGH);
+          } else {
+            digitalWrite(column_one, LOW);
+          }
+        } else if (countC == 1) {
+          if (character_list[count][countC] != 0) {
+            digitalWrite(column_two, HIGH);
+          } else {
+            digitalWrite(column_two, LOW);
+          }
+        } else if (countC == 2) {
+          if (character_list[count][countC] != 0) {
+            digitalWrite(column_three, HIGH);
+          } else {
+            digitalWrite(column_three, LOW);
+          }
+        }
+      }
+    }
+    counter++;
+  }
+}
+
+void setup() {
+  // setting pins to output
+  pinMode(row_one, OUTPUT);
+  pinMode(row_two, OUTPUT);
+  pinMode(row_three, OUTPUT);
+  pinMode(row_four, OUTPUT);
+  pinMode(row_five, OUTPUT);
+
+  pinMode(column_one, OUTPUT);
+  pinMode(column_two, OUTPUT);
+  pinMode(column_three, OUTPUT);
+
+}
+
+void loop() {
+  // calling images in sequential order
+  display_character(a_image, combined_speed);
+  display_character(b_image, combined_speed);
+  display_character(c_image, combined_speed);
+  display_character(d_image, combined_speed);
+  display_character(e_image, combined_speed);
+  display_character(f_image, combined_speed);
+  display_character(g_image, combined_speed);
+  display_character(h_image, combined_speed);
+  display_character(i_image, combined_speed);
+  display_character(j_image, combined_speed);
+  display_character(k_image, combined_speed);
+  display_character(l_image, combined_speed);
+  display_character(m_image, combined_speed);
+  display_character(n_image, combined_speed);
+  display_character(o_image, combined_speed);
+  display_character(p_image, combined_speed);
+  display_character(q_image, combined_speed);
+  display_character(r_image, combined_speed);
+  display_character(s_image, combined_speed);
+  display_character(t_image, combined_speed);
+  display_character(u_image, combined_speed);
+  display_character(v_image, combined_speed);
+  display_character(w_image, combined_speed);
+  display_character(x_image, combined_speed);
+  display_character(y_image, combined_speed);
+  display_character(z_image, combined_speed);
+}
